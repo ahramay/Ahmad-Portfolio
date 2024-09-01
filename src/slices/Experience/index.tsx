@@ -1,3 +1,15 @@
+/**
+    * @description      : 
+    * @author           : 
+    * @group            : 
+    * @created          : 01/09/2024 - 05:41:25
+    * 
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 01/09/2024
+    * - Author          : 
+    * - Modification    : 
+**/
 import Bounded from "@/components/Bounded";
 import Heading from "@/components/Heading";
 import { Content } from "@prismicio/client";
@@ -27,9 +39,9 @@ const Experience = ({ slice }: ExperienceProps): JSX.Element => {
           </Heading>
 
           <div className="mt-1 flex w-fit items-center gap-1 text-2xl font-semibold tracking-tight text-slate-400">
-            <span>{item.time_period}</span>{" "}
-            <span className="text-3xl font-extralight">/</span>{" "}
             <span>{item.institution}</span>
+            <span className="text-3xl font-extralight">/</span>{" "}
+            <span>{item.time_period}</span>{" "}
           </div>
           <div className="prose prose-lg prose-invert mt-4">
             <PrismicRichText field={item.description} />

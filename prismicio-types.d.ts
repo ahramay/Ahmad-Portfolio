@@ -699,16 +699,6 @@ export interface ExperienceSliceDefaultItem {
   title: prismic.KeyTextField;
 
   /**
-   * Time Period field in *Experience → Items*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: experience.items[].time_period
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  time_period: prismic.KeyTextField;
-
-  /**
    * Institution field in *Experience → Items*
    *
    * - **Field Type**: Text
@@ -717,6 +707,16 @@ export interface ExperienceSliceDefaultItem {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   institution: prismic.KeyTextField;
+
+  /**
+   * Time Period field in *Experience → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: experience.items[].time_period
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  time_period: prismic.KeyTextField;
 
   /**
    * Description field in *Experience → Items*
