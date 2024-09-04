@@ -2,5 +2,5 @@
   "repositoryName": "valliant-rustico-7jqjiv",
   "adapter": "@slicemachine/adapter-next",
   "libraries": ["./src/slices"],
-  "localSliceSimulatorURL": "https://ahmad-portfolio-ten.vercel.app/slice-simulator"
+  "localSliceSimulatorURL": "https://localhost:3000/slice-simulator"
 }
