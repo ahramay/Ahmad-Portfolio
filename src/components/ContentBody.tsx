@@ -27,7 +27,7 @@ export default function ContentBody({
   page: Content.BlogPostDocument | Content.ProjectDocument;
 }) {
   const formattedDate = formatDate(page.data.date);
-  const isProjectDocument = (page: any): page is Content.ProjectDocument => {
+  const isProjectDoc = (page: any): page is Content.ProjectDocument => {
     return (page as Content.ProjectDocument).data.project_link !== undefined;
   };
 
@@ -45,7 +45,7 @@ export default function ContentBody({
         <p className="mt-8 border-b border-slate-600 text-xl font-medium text-slate-300">
           {formattedDate}
         </p>
-      {isProjectDocument(page) && isFilled.link(page.data.project_link) && (
+      {isProjectDoc(page) && isFilled.link(page.data.project_link) && (
           <div className="socials inline-flex justify-center sm:justify-end">
             <PrismicNextLink
               field={page.data.project_link}
