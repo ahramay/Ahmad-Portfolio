@@ -279,6 +279,17 @@ interface ProjectDocumentData {
   image: prismic.ImageField<never>;
 
   /**
+   * ProjectLink field in *Project*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.project_link
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  project_link: prismic.LinkField;
+
+  /**
    * Slice Zone field in *Project*
    *
    * - **Field Type**: Slice Zone

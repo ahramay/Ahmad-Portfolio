@@ -13,12 +13,6 @@
           "placeholder": ""
         }
       },
-      "uid": {
-        "config": {
-          "label": "UID"
-        },
-        "type": "UID"
-      },
       "date": {
         "type": "Date",
         "config": {
@@ -32,6 +26,21 @@
           "label": "Hover Image",
           "constraint": {},
           "thumbnails": []
+        }
+      },
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "project_link": {
+        "type": "Link",
+        "config": {
+          "label": "ProjectLink",
+          "placeholder": "",
+          "allowTargetBlank": false,
+          "select": null
         }
       },
       "slices": {

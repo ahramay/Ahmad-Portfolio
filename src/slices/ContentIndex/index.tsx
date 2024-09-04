@@ -1,3 +1,15 @@
+/**
+    * @description      : 
+    * @author           : 
+    * @group            : 
+    * @created          : 01/09/2024 - 16:21:53
+    * 
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 01/09/2024
+    * - Author          : 
+    * - Modification    : 
+**/
 import { Content, isFilled } from "@prismicio/client";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import { createClient } from "@/prismicio";

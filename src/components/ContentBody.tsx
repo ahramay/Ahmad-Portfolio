@@ -1,10 +1,25 @@
+/**
+    * @description      : 
+    * @author           : 
+    * @group            : 
+    * @created          : 01/09/2024 - 13:10:12
+    * 
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 01/09/2024
+    * - Author          : 
+    * - Modification    : 
+**/
+import React from "react";
 import { SliceZone } from "@prismicio/react";
 import { Content } from "@prismicio/client";
-
 import { components } from "@/slices";
 import Heading from "@/components/Heading";
 import Bounded from "@/components/Bounded";
 import { formatDate } from "@/utils/formatDate";
+import { PrismicNextLink } from "@prismicio/next";
+import { isFilled } from "@prismicio/client";
+import { FaGithub, FaTwitter, FaLinkedin,FaGlobe } from "react-icons/fa6";
 
 export default function ContentBody({
   page,
@@ -26,6 +41,17 @@ export default function ContentBody({
         <p className="mt-8 border-b border-slate-600 text-xl font-medium text-slate-300">
           {formattedDate}
         </p>
+        <div className="socials inline-flex justify-center sm:justify-end">
+          {isFilled.link(page.data.project_link) && (
+            <PrismicNextLink
+              field={page.data.project_link}
+              className="p-2 text-2xl text-slate-300 transition-all duration-150 hover:scale-125 hover:text-yellow-400"
+              aria-label={ " on GitHub"}
+            >
+              <FaGlobe />
+            </PrismicNextLink>
+          )}
+        </div>
         <div className="prose prose-lg prose-invert mt-12 w-full max-w-none md:mt-20">
           <SliceZone slices={page.data.slices} components={components} />
         </div>
