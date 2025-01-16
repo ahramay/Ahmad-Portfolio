@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/page": [
+    "/project/[uid]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/project/[uid]/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -15,6 +15,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
     ],
     "/[uid]/page": [
       "static/chunks/webpack.js",
